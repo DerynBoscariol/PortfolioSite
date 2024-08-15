@@ -9,15 +9,11 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
 
 body {
   margin: 0;
-  background-color:#f8e8d8;;
+  background-color:#f8e8d8;
   color: #0C4D4B;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #main-nav {
@@ -29,9 +25,8 @@ body {
   margin:0;
   padding:2em;
   padding-top: 0.5em;
-  border-bottom: 4px solid #77C585;
+  border-bottom: 3px solid #77C585;
   box-shadow: 1px 1px 10px 0px #76706a;
-  color: #f8e8d8;
 }
 
 #header a {
@@ -45,7 +40,7 @@ body {
 
 #site-name {
   margin: 0;
-  font-size: 2em;
+  font-size: 36px;
   text-shadow: 1.5px 1px 0px #365474;
 }
 
@@ -56,15 +51,17 @@ body {
 
 #tag-line {
   font-weight: 100;
-  font-size: 1.5em;
+  font-size: 24px;
   color: #0C4D4B;
+  align-self: flex-end;
 }
 
 #nameTag {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  gap: 4em
+  justify-content: space-between;
+  width: 85vw;
 }
 
 #main {
@@ -72,24 +69,117 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 56px;
   line-height: 1.1;
   font-weight: 500;
   text-align: center;
+  font-family: 'Brush Script MT', cursive;
+}
 
+#intro {
+  font-size: 22px;
+  margin:auto;
+  font-weight: 100;
+  text-align: center;
 }
 
 /******************* Skills ******************/
 
 .skill-list {
   list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction:column;
+  background-color: #77c5854a;
+  border-radius: 10px;
+  width: 28vw;
+  padding: 15px;
+  border: 1px solid #68a0dc
+}
+
+.skill-head {
+  display:flex;
+  gap :5px;
+  font-size:20px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .skill-icon {
   width: 50px;
-  height: auto;
+  height: 50px;
+}
+
+.examples {
+  justify-self: flex-end;
 }
 
 #footer {
   text-align: center;
+}
+
+/*******************************************/
+#root {
+  margin:0;
+}
+
+h4 {
+  font-size: 24px;
+  color: #68a0dc;
+}
+.project-list {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #77c5854a;
+  padding: 10px;
+  width: 40vw;
+  border-radius: 10px;
+  border: 1px solid #68a0dc;
+}
+
+.info-text a {
+  color: #68a0dc;
+  text-decoration: underline;
+}
+
+a :hover {
+  color: #ee4266;
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.project-info {
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-img {
+  width: 80%; 
+  height: auto; 
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.info-text {
+  width:90%;
 }

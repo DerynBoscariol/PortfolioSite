@@ -14,15 +14,17 @@ export default function Skills() {
 
   return (
     <div id="main">
-			<h3>All Skills</h3>
+			<h1>My Skills</h1>
       <ul className="skill-list">
         {
           skills.map((skill) => (
             <div key={skill._id}>
-              <li>
-              <img className="skill-icon" src={`imgs/icons/${skill.skillIcon}`} alt={skill.skillName + " icon"} />
-                <p>{skill.skillName}</p>
-                <p>Examples: 
+              <li className="skill-item">
+                <div className="skill-head">
+                  <img className="skill-icon" src={`imgs/icons/${skill.skillIcon}`} alt={skill.skillName + " icon"} />
+                  <p>{skill.skillName}</p>
+                </div>
+                <p className="examples">Examples: 
                   <ul>
                     {skill.skillExamples.map((element, index) => (
                           <li key={index}>{element}</li>
