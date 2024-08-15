@@ -1,0 +1,95 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  background-color:#f8e8d8;;
+  color: #0C4D4B;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-nav {
+  display:flex;
+  gap: 1em;
+}
+
+#header {
+  margin:0;
+  padding:2em;
+  padding-top: 0.5em;
+  border-bottom: 4px solid #77C585;
+  box-shadow: 1px 1px 10px 0px #76706a;
+  color: #f8e8d8;
+}
+
+#header a {
+  color: #68a0dc;
+}
+
+#header a:hover {
+  color: #ee4266;
+  text-decoration: underline;
+}
+
+#site-name {
+  margin: 0;
+  font-size: 2em;
+  text-shadow: 1.5px 1px 0px #365474;
+}
+
+#site-name a:hover {
+  color: #ee4266;
+  text-decoration: none;
+}
+
+#tag-line {
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #0C4D4B;
+}
+
+#nameTag {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 4em
+}
+
+#main {
+  padding:2em;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+/******************* Skills ******************/
+
+.skill-list {
+  list-style: none;
+}
+
+.skill-icon {
+  width: 50px;
+  height: auto;
+}
+
+#footer {
+  text-align: center;
+}
