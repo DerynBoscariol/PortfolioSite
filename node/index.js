@@ -2,11 +2,13 @@ const express = require("express");
 //const path = require("path");
 const cors = require("cors"); //need this to set this API to allow requests from other servers
 const { MongoClient } = require("mongodb");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const app = express();
 const port = process.env.PORT || "3000";
 
-const dbUrl = "mongodb+srv://derynb22:q6Ywm2OLYiaC4t4e@portfolio.ms4acjp.mongodb.net/";
+const dbUrl = `mongodb+srv://${process.env.DBUSER}:${process.env.DBPWD}@portfolio.ms4acjp.mongodb.net/`;
 const client = new MongoClient(dbUrl);
 
 app.use(express.urlencoded({ extended: true }));
@@ -15,7 +17,7 @@ app.use(express.json()); //need this line to be able to receive/parse JSON from 
 //allow requests from all servers
 app.use(cors({
   origin: "*"
-}));
+})); 
 
 //API endpoints
 
