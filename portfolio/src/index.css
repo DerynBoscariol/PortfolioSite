@@ -6,8 +6,13 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #68a0dc;
   text-decoration: inherit;
+}
+
+a :hover {
+  color: #ee4266;
+  text-decoration: underline;
 }
 
 body {
@@ -29,24 +34,19 @@ body {
   box-shadow: 1px 1px 10px 0px #76706a;
 }
 
-#header a {
-  color: #68a0dc;
-}
-
-#header a:hover {
+a:hover {
   color: #ee4266;
   text-decoration: underline;
+}
+
+#site-name a:hover {
+  text-decoration: none;
 }
 
 #site-name {
   margin: 0;
   font-size: 36px;
   text-shadow: 1.5px 1px 0px #365474;
-}
-
-#site-name a:hover {
-  color: #ee4266;
-  text-decoration: none;
 }
 
 #tag-line {
@@ -66,6 +66,7 @@ body {
 
 #main {
   padding:2em;
+  padding-top:0;
 }
 
 h1 {
@@ -74,6 +75,7 @@ h1 {
   font-weight: 500;
   text-align: center;
   font-family: 'Brush Script MT', cursive;
+  margin:20px;
 }
 
 #intro {
@@ -148,15 +150,12 @@ h4 {
   width: 40vw;
   border-radius: 10px;
   border: 1px solid #68a0dc;
+  align-self: stretch;
+  height: max-content;
 }
 
 .info-text a {
   color: #68a0dc;
-  text-decoration: underline;
-}
-
-a :hover {
-  color: #ee4266;
   text-decoration: underline;
 }
 
@@ -182,4 +181,28 @@ h5 {
 
 .info-text {
   width:90%;
+}
+
+/************ABOUT ME************/
+
+#bio {
+  display: flex;
+  gap: 60px;
+  margin:20px;
+}
+
+#bio p {
+  width:55vw;
+}
+
+#bio img {
+  width: 30vw;
+  height: auto;
+}
+
+/************ CONTACT ***************/
+
+#contact {
+  margin: auto;
+  width: 50%;
 }
