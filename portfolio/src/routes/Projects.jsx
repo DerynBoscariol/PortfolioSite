@@ -36,7 +36,7 @@ export default function Projects() {
                         ))}
                       </ul>
                     </p>
-                    {project.projectDatabase && <p>Environments/Frameworks:
+                    {project.projectFrameworks && <p>Environments/Frameworks:
                       <ul>
                         {project.projectFrameworks.map((element, index) => (
                           <li key={index}>{element}</li>
@@ -54,4 +54,4 @@ export default function Projects() {
         </ul>
     </main>
   );
-}
+} 

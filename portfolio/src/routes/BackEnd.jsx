@@ -36,7 +36,7 @@ export default function BackEnd() {
                         ))}
                       </ul>
                     </p>
-                    {project.projectDatabase && <p>Environments/Frameworks:
+                    {project.projectFrameworks && <p>Environments/Frameworks:
                       <ul>
                         {project.projectFrameworks.map((element, index) => (
                           <li key={index}>{element}</li>
