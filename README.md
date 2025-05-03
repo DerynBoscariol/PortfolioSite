@@ -1,6 +1,7 @@
 # Welcome to my portfolio site
 
 I am still working on deployment. Clone this repo and follow the steps below to view the site.
+[Check out the work in progress live demo here](https://portfoliosite-three-rho.vercel.app/)
 
 ## Running the application
 1. Clone this repo
